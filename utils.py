@@ -46,7 +46,7 @@ def removeEmpty(d):
                     if len(y) == 0:
                         del d[x]
             else:
-                if (not y) and (y not in [False, 0]):
+                if (not y) and (y not in [False, 0, ""]):
                     del d[x]
 
     elif type(d) == type([]):
@@ -73,7 +73,7 @@ def removeEmpty(d):
                     if len(y) == 0:
                         del d[x]
             else:
-                if (not y) and (y not in [False, 0]):
+                if (not y) and (y not in [False, 0, ""]):
                     del d[x]
 
 def calculateHMAC(value_as_string, path, sid, seed):
